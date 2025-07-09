@@ -5,7 +5,7 @@
         <li class="nav-item nav-profile">
             <a href="#" class="nav-link">
                 <div class="nav-profile-image">
-                    <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="profile" />
+                    <img src="{{ asset('assets/images/faces/face1.jpg') }}" alt="profile"  />
                     <span class="login-status online"></span> <!-- change to offline or busy -->
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
@@ -18,14 +18,14 @@
 
 
         <!-- Dashboard -->
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" href="{{ url('seller/dashboard') }}">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
             </a>
-        </li>
+        </li> --}}
         <!-- Blog Menu with Submenu -->
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#blog-menu" aria-expanded="false"
                 aria-controls="blog-menu">
                 <span class="menu-title">Blog</span>
@@ -42,16 +42,28 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
         <!-- Teams Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="{{ url('admin/teams') }}">
-                <span class="menu-title">Teams</span>
-                <i class="mdi mdi-account-group menu-icon"></i>
+            <a class="nav-link" href="{{ url('seller/products') }}">
+                <span class="menu-title">Products</span>
+                <i class="mdi mdi-package-variant menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url('seller/orders') }}">
+                <span class="menu-title">Orders</span>
+                <i class="mdi mdi-truck-delivery menu-icon"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url('seller/earnings') }}">
+                <span class="menu-title">Earnings & Payouts</span>
+                <i class="mdi mdi-cash-multiple menu-icon"></i>
             </a>
         </li>
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" href="{{ url('admin/services') }}">
                 <span class="menu-title">Services</span>
                 <i class="mdi mdi-briefcase-check menu-icon"></i>
@@ -64,7 +76,7 @@
                 <span class="menu-title">Home Slider</span>
                 <i class="mdi mdi-image-area menu-icon"></i>
             </a>
-        </li>
+        </li> --}}
 
 
         <!-- UI Elements with Submenu -->

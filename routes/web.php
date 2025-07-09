@@ -58,6 +58,9 @@ Route::prefix('seller')->group(function () {
     Route::get('dashboard', function () {
         return view('seller.dashboard');
     })->name('seller.dashboard');
+
+        Route::resource('products', TeamController::class);
+
 });
 
 });

@@ -2,10 +2,12 @@
 <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
         <a class="navbar-brand brand-logo pt-5 pb-5" href="index.html">
-            <img src="{{ asset('assets/images/sustech.png') }}" alt="logo" style="max-width: 100px; height:80px;" />
+            {{-- <img src="{{ asset('assets/images/sustech.png') }}" alt="logo" style="max-width: 200px; height:80px;" /> --}}
+            <h3>DreameBazar</h3>
         </a>
         <a class="navbar-brand brand-logo-mini" href="index.html">
-            <img src="{{ asset('assets/images/sustech.png') }}" alt="logo" />
+            {{-- <img src="{{ asset('assets/images/sustech.png') }}" alt="logo" /> --}}
+            <h3>DreameBazar</h3>
         </a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-stretch">

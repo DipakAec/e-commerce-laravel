@@ -79,7 +79,7 @@ return [
     ],
          'sellers' => [
         'driver' => 'eloquent',
-        'model' => App\Models\Seller::class,
+        'model' => App\Models\Seller\Seller::class,
     ],
     ],
 

@@ -25,8 +25,9 @@
                     <div class="col-lg-3 mx-auto">
                         <div class="auth-form-light text-center p-5"> {{-- Changed text-left to text-center --}}
                             <div class="brand-logo mb-3">
-                                <img src="{{ asset('assets/images/sustech.png') }}" class="d-block mx-auto"
-                                    alt="Logo" style="max-width: 120px;">
+                                {{-- <img src="{{ asset('assets/images/sustech.png') }}" class="d-block mx-auto"
+                                    alt="Logo" style="max-width: 120px;"> --}}
+                                    <h3>DreameBazar</h3>
                             </div>
 
                             <h4 class="mb-2">Hello Seller! Let's get started</h4>
