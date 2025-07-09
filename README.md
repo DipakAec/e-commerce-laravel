@@ -42,6 +42,7 @@ A robust, multi-role e-commerce system built with **Laravel**, featuring **Admin
 
 ---
 
+<<<<<<< HEAD
 
 ---
 
@@ -67,8 +68,59 @@ php artisan key:generate
 # 5. Run Database Migrations
 php artisan migrate
 
+=======
+## 🚀 Installation
+
+Follow these steps to set up the project locally:
+
+```bash
+# 1. Clone the Repository
+git clone https://github.com/DipakAec/e-commerce-laravel
+cd e-commerce-laravel
+
+# 2. Install PHP Dependencies
+composer install
+
+# 3. Install Frontend Assets (Optional if using Laravel Mix)
+npm install && npm run dev
+
+# 4. Set Up Environment File
+cp .env.example .env
+php artisan key:generate
+
+# 5. Run Database Migrations
+php artisan migrate
+
+>>>>>>> 4a6b4017ca828f70ffa5866ef85e57c09c7be8ea
 # 6. Start the Development Server
 php artisan serve
 
 
+<<<<<<< HEAD
 
+=======
+## 🚀 Installation
+
+Follow these steps to set up the project locally:
+
+```bash
+# 1. Clone the Repository
+git clone https://github.com/DipakAec/e-commerce-laravel
+cd e-commerce-laravel
+
+# 2. Install PHP Dependencies
+composer install
+
+# 3. Install Frontend Assets (Optional if using Laravel Mix)
+npm install && npm run dev
+
+# 4. Set Up Environment File
+cp .env.example .env
+php artisan key:generate
+
+# 5. Run Database Migrations
+php artisan migrate
+
+# 6. Start the Development Server
+php artisan serve
+>>>>>>> 4a6b4017ca828f70ffa5866ef85e57c09c7be8ea
