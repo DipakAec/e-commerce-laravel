@@ -51,25 +51,13 @@ Route::prefix('seller')->group(function () {
     Route::post('register', [SellerAuthController::class, 'submitRegisterForm'])->name('seller.register.submit');
 
     Route::get('login', [SellerAuthController::class, 'showLoginForm'])->name('seller.login');
-    Route::post('login', [AuthController::class, 'login'])->name('seller.login.submit');
-    Route::post('logout', [AuthController::class, 'logout'])->name('seller.logout');
+    Route::post('login', [SellerAuthController::class, 'login'])->name('seller.login.submit');
+    Route::post('logout', [SellerAuthController::class, 'logout'])->name('seller.logout');
 
-    // Route::middleware(['auth:admin'])->group(function () {
-    //     Route::get('dashboard', function () {
-    //         return view('admin.dashboard');
-    //     })->name('admin.dashboard');
+  Route::middleware(['auth:seller'])->group(function () {
+    Route::get('dashboard', function () {
+        return view('seller.dashboard');
+    })->name('seller.dashboard');
+});
 
-    //     // Blog Category Routes
-    //     // Resource Routes
-    //     Route::resource('blog-categories', BlogCategoryController::class);
-    //     Route::post('blog-categories-toggle-status', [BlogCategoryController::class, 'toggleStatus'])->name('blog-categories-toggle-status');
-    //     Route::resource('services', ServicesController::class);
-    //     Route::post('services-toggle-status', [ServicesController::class, 'toggleStatus'])->name('services-toggle-status');
-
-
-    //     Route::resource('blogs', BlogController::class);
-    //     Route::resource('teams', TeamController::class);
-    //     Route::post('toggle-status', [TeamController::class, 'toggleStatus'])->name('toggle-status');
-
-    // });
 });

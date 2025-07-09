@@ -24,18 +24,18 @@
 <body>
   <div class="container-scroller">
     
-    @include('admin.layouts.header')
+    @include('seller.layouts.header')
 
     <div class="container-fluid page-body-wrapper">
       
-      @include('admin.layouts.sidebar')
+      @include('seller.layouts.sidebar')
 
       @yield('content')
       
     </div>
 
     {{-- Include footer --}}
-    @include('admin.layouts.footer')
+    @include('seller.layouts.footer')
 </div>
 
 

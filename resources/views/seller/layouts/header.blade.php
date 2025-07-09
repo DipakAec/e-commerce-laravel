@@ -35,15 +35,16 @@
                         <span class="availability-status online"></span>
                     </div>
                     <div class="nav-profile-text">
-                        <p class="mb-1 text-black">{{ Auth::guard('admin')->user()->name ?? 'Admin' }}</p>
+                        <p class="mb-1 text-black">{{ Auth::guard('seller')->user()->name ?? 'Seller' }}</p>
                     </div>
                 </a>
                 <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item" href="{{ route('admin.logout') }}"
+                    <a class="dropdown-item" href="{{ route('seller.logout') }}"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                     </a>
-                    <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+
+                    <form id="logout-form" action="{{ route('seller.logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
                 </div>

@@ -29,18 +29,18 @@
                                     alt="Logo" style="max-width: 120px;">
                             </div>
 
-                            <h4 class="mb-2">Hello Admin! Let's get started</h4>
+                            <h4 class="mb-2">Hello Seller! Let's get started</h4>
                             <h6 class="font-weight-light mb-4">Sign in to continue.</h6>
 
                             @if (session('error'))
                                 <div class="alert alert-danger">{{ session('error') }}</div>
                             @endif
 
-                            <form class="pt-3" method="POST" action="{{ route('admin.login.submit') }}">
+                            <form class="pt-3" method="POST" action="{{ route('seller.login.submit') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-lg" name="email"
-                                        placeholder="Email" required>
+                                    <input type="text" class="form-control form-control-lg" name="login"
+                                        placeholder="Email or Username" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control form-control-lg" name="password"
