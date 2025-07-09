@@ -67,3 +67,28 @@ php artisan migrate
 # 6. Start the Development Server
 php artisan serve
 
+
+## 🚀 Installation
+
+Follow these steps to set up the project locally:
+
+```bash
+# 1. Clone the Repository
+git clone https://github.com/DipakAec/e-commerce-laravel
+cd e-commerce-laravel
+
+# 2. Install PHP Dependencies
+composer install
+
+# 3. Install Frontend Assets (Optional if using Laravel Mix)
+npm install && npm run dev
+
+# 4. Set Up Environment File
+cp .env.example .env
+php artisan key:generate
+
+# 5. Run Database Migrations
+php artisan migrate
+
+# 6. Start the Development Server
+php artisan serve
